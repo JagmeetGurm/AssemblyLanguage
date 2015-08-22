@@ -20,3 +20,16 @@ strOne BYTE 40 DUP (?)
 strTwo BYTE 40 DUP (?)
 
 
+; the output label
+label BYTE "the addition of two nos is: ", 0
+sum BYTE 11 DUP (?)
+
+
+.CODE 
+_MainProc PROC
+
+;taking the first no as input and moving it in varOne variable
+input promptOne, strOne, 40
+atod strOne
+mov varOne, eax
+

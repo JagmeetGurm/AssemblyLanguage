@@ -38,5 +38,7 @@ input promptTwo, strTwo, 40
 atod strTwo
 mov varTwo, eax
 
+add varOne
+dtoa sum
 
 

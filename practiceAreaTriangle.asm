@@ -24,3 +24,19 @@ valTwo BYTE 40 DUP (?)
 labl BYTE "The area of triangle is: ", 0
 area BYTE 11 DUP (?)
  
+
+; Code part of the progam
+.CODE
+_MainProc Proc
+
+; input prompt and the value
+input promptOne, valOne, 40
+atod valOne
+mov len, eax
+
+;input prompt and the 2nd value
+input promptTwo, valTwo
+atod valTwo
+mov alt, eax
+
+;

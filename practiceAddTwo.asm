@@ -21,7 +21,7 @@ strTwo BYTE 40 DUP (?)
 
 
 ; the output label
-label BYTE "the addition of two nos is: ", 0
+labl BYTE "the addition of two nos is: ", 0
 sum BYTE 11 DUP (?)
 
 
@@ -38,7 +38,15 @@ input promptTwo, strTwo, 40
 atod strTwo
 mov varTwo, eax
 
-add varOne
-dtoa sum
+add varOne, eax
+dtoa sum, eax
 
+output labl, sum
+
+mov eax, 0
+
+ret 
+_MainProc ENDP
+
+END
 

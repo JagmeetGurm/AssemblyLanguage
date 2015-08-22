@@ -11,5 +11,12 @@ INCLUDE io.h
 varOne DWORD ?
 varTwo DWORD ?
 
-; 
+; two prompts asking user to enter his value
+promptOne BYTE "Enter the first no:  ", 0
+promptTwo BYTE "Enter the 2nd no: ", 0
+
+; two byte variables to take input values as byte
+strOne BYTE 40 DUP (?)
+strTwo BYTE 40 DUP (?)
+
 

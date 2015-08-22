@@ -6,6 +6,7 @@
 INCLUDE io.h
 .STACK 4096	
 
+.DATA
 ; variables declaration
 
 ;two prompts for entering the base and alt of triangle
@@ -35,8 +36,23 @@ atod valOne
 mov len, eax
 
 ;input prompt and the 2nd value
-input promptTwo, valTwo
+input promptTwo, valTwo, 40
 atod valTwo
 mov alt, eax
+
+;multiplication
+mul len
+
+;mov ecx, 2
+;mul ecx
+dtoa area, eax
+
+;output label and value
+output labl, area
+
+mov eax, 0
+ret
+_MainProc ENDP
+END
 
 ;

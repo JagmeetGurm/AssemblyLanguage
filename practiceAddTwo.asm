@@ -33,3 +33,10 @@ input promptOne, strOne, 40
 atod strOne
 mov varOne, eax
 
+; 2nd value input and moving it into variable
+input promptTwo, strTwo, 40
+atod strTwo
+mov varTwo, eax
+
+
+

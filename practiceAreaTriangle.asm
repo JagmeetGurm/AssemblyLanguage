@@ -19,4 +19,8 @@ alt DWORD ?
 ;two byte variables for taking input
 valOne  BYTE 40 DUP (?)
 valTwo BYTE 40 DUP (?)
+
+;output label and variable for displaying result
+labl BYTE "The area of triangle is: ", 0
+area BYTE 11 DUP (?)
  

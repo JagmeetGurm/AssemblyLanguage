@@ -7,5 +7,9 @@ INCLUDE io.h
 .STACK 4096	
 
 .DATA
+; we need two variables to store numbers
+varOne DWORD ?
+varTwo DWORD ?
 
+; 
 

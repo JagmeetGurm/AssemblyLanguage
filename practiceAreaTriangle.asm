@@ -15,3 +15,8 @@ promptTwo BYTE "Enter the altitude of triangle: ", 0
 ;two variables for storing input values
 len DWORD ?
 alt DWORD ?
+
+;two byte variables for taking input
+valOne  BYTE 40 DUP (?)
+valTwo BYTE 40 DUP (?)
+ 

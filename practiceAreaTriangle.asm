@@ -12,4 +12,6 @@ INCLUDE io.h
 promptOne BYTE "Enter the base of triangle: ", 0
 promptTwo BYTE "Enter the altitude of triangle: ", 0
 
-;two variables
+;two variables for storing input values
+len DWORD ?
+alt DWORD ?

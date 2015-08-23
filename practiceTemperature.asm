@@ -1,4 +1,5 @@
-; This program will convert celsius degree to farenheit 
+; This program will convert celsius degree to farenheit AND 
+;also calculate the avg of 3 values in Celsius.
 
 ; preprocessor
 .586
@@ -17,12 +18,34 @@ celStr3 BYTE 40 DUP (?)
 
 
 ; output label and variable
-labl BYTE "The temp in Farenheit is: ", 0
+labl BYTE "The temp output is: ", 0
+outCel BYTE "Celsius temp: ", 0
+outFar BYTE "Farenheit temp: ", 0
+outAvg BYTE "Avg temp in C: ", 0
+outString BYTE 250 DUP (?)
+
+
+outCelStr BYTE 11 DUP (?)
+outCelStr2 BYTE 11 DUP (?)
+outCelStr3 BYTE 11 DUP (?)
 farStr BYTE 11 DUP (?)
+fartStr2 BYTE 11 DUP (?)
+farStr3 BYTE 11 DUP (?)
+avg BYTE 11 DUP (?)
+
+
+
 
 ; variables for storing values
 celVar DWORD ?
+celVar2 DWORD ?
+celVar3 DWORD ?
+
 farVar DWORD ?
+farVar2 DWORD ?
+farVar3 DWORD ?
+
+
 
 
 
@@ -33,5 +56,8 @@ _MainProc PROC
 input promptOne, celStr, 40
 atod celStr
 mov celVar, eax
+dtoa , eax
 
 
+_MainProc ENDP
+END

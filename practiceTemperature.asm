@@ -55,8 +55,10 @@ _MainProc PROC
 
 input promptOne, celStr, 40
 atod celStr
-mov celVar, eax
-dtoa , eax
+mov celVar, eax ; stored the celsius val in variable after converting it to double 
+dtoa outCelStr, eax ;converting dword to string for storing again
+
+input promptOne, 
 
 
 _MainProc ENDP

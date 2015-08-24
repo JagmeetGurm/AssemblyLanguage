@@ -72,17 +72,27 @@ mov ebx, 9; preparing for c to f conversion
 mov ecx, 5
 
 mov eax, celVar; moving cel to eax registera nd then multiply
-imul 9
+imul ebx
 cdq
 idiv ecx; dividing by 5 
 
 add eax, 32 ; adding 32 
 ; now eax contains the final value in DWORD in farenheit
-dtoa farStr
+dtoa farStr, eax
+
+; converting the 2nd value
+mov eax, celVar2
+imul ebx
+cdq
+idiv ecx
+add eax, 32
+dtoa farStr2, eax
+
 
 
  
 
-
+ output labl, farStr
+ ret
 _MainProc ENDP
 END

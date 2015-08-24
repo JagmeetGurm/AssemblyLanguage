@@ -67,6 +67,13 @@ input promptThree, celStr3, 40
 atod celStr3
 mov celVar3, eax
 dtoa outCelStr3, eax
+
+mov ebx, 9; preparing for c to f conversion
+mov ecx, 5
+
+;mov eax, celVar; moving cel to eax registera nd then multiply
+;imul 9
+;cdq
  
 
 

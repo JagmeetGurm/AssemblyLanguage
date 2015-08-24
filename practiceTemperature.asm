@@ -73,7 +73,8 @@ mov ecx, 5
 
 mov eax, celVar; moving cel to eax registera nd then multiply
 imul 9
-;cdq
+cdq
+idiv ecx; dividing by 5 
  
 
 

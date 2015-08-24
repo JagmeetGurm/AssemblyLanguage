@@ -88,6 +88,16 @@ idiv ecx
 add eax, 32
 dtoa farStr2, eax
 
+;converting the 3rd value
+mov eax, celVar3
+imul ebx
+cdq
+idiv ecx
+add eax, 32
+dtoa farStr3, eax
+
+
+
 
 
  

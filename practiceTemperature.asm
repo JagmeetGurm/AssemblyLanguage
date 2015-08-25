@@ -116,6 +116,14 @@ mov ecx, 14
 rep movsb
 mov outString + 14, 20H
 
+; now lets print out the value 
+lea esi, outCelStr
+lea edi, outString+ 14
+cld
+mov ecx, 11
+rep movsb
+mov outString + 25, 20H
+
 
  
 

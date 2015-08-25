@@ -118,35 +118,37 @@ mov outString + 14, 20H
 
 ; now lets print out the value 
 lea esi, outCelStr
-lea edi, outString+ 14
+lea edi, outString+ 14+1
 cld
 mov ecx, 11
 rep movsb
-mov outString + 25, 20H
+mov outString + 26, 20H
 
 ;print another value
 lea esi, outCelStr2
-lea edi, outString + 25
+lea edi, outString + 27
 cld 
 mov ecx, 11
 rep movsb
-mov outString + 36, 20H
+mov outString + 38, 20H
 
 
 
 ;print another value
 lea esi, outCelStr3
-lea edi, outString + 36
+lea edi, outString + 39
 cld 
 mov ecx, 11
 rep movsb
-mov outString + 47, 0DH
+mov outString + 50, 20H
+mov outString + 50, 0DH
 
 lea esi, outFar
-lea edi, outString +47+1
+lea edi, outString +51
 cld
-mov ecx, 14
-mov outString+62, 0DH
+mov ecx, 16
+rep movsb
+mov outString+67, 20H
 
 
 

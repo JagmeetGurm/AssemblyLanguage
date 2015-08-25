@@ -29,7 +29,7 @@ outCelStr BYTE 11 DUP (?)
 outCelStr2 BYTE 11 DUP (?)
 outCelStr3 BYTE 11 DUP (?)
 farStr BYTE 11 DUP (?)
-fartStr2 BYTE 11 DUP (?)
+farStr2 BYTE 11 DUP (?)
 farStr3 BYTE 11 DUP (?)
 avg BYTE 11 DUP (?)
 
@@ -125,7 +125,7 @@ mov outString + 14, 20H
 
  
 
- output labl, farStr
+ output labl, outString
  ret
 _MainProc ENDP
 END

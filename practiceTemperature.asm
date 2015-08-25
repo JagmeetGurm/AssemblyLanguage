@@ -164,7 +164,21 @@ mov ecx, 11
 rep movsb
 mov outString + 91, 20H
 
+lea esi, farStr3
+lea edi, outString + 92
+cld
+mov ecx, 11
+rep movsb
+mov outString + 103, 20H
+mov outString + 103, 0DH
 
+
+lea esi, outAvg
+lea edi, outString +104
+cld
+mov ecx, 14
+rep movsb
+mov outString+ 118, 20H
 
 
 

@@ -180,13 +180,13 @@ mov ecx, 14
 rep movsb
 mov outString+ 118, 20H
 
+lea esi, avg
+lea edi, outString + 119
+cld
+mov ecx, 11
+rep movsb
+mov outString + 130, 20H
 
-
-
-
-
-
- 
 
 
 

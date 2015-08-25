@@ -78,6 +78,7 @@ idiv ecx; dividing by 5
 
 add eax, 32 ; adding 32 
 ; now eax contains the final value in DWORD in farenheit
+mov farVar, eax
 dtoa farStr, eax
 
 ; converting the 2nd value
@@ -86,6 +87,7 @@ imul ebx
 cdq
 idiv ecx
 add eax, 32
+mov farVar2, eax
 dtoa farStr2, eax
 
 ;converting the 3rd value
@@ -94,9 +96,28 @@ imul ebx
 cdq
 idiv ecx
 add eax, 32
+mov farVar3, eax
 dtoa farStr3, eax
 
+;calculating the average
+add eax, farVar2
+add eax, farVar; total moved in eax
+cdq
+mov ecx, 3
 
+idiv ecx
+dtoa avg, eax
+
+;lets print out the output
+lea esi, outCel
+lea edi, outString
+cld
+mov ecx, 14
+rep movsb
+mov outString + 14, 20H
+
+
+ 
 
 
 

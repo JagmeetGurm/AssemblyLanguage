@@ -124,6 +124,33 @@ mov ecx, 11
 rep movsb
 mov outString + 25, 20H
 
+;print another value
+lea esi, outCelStr2
+lea edi, outString + 25
+cld 
+mov ecx, 11
+rep movsb
+mov outString + 36, 20H
+
+
+
+;print another value
+lea esi, outCelStr3
+lea edi, outString + 36
+cld 
+mov ecx, 11
+rep movsb
+mov outString + 47, 0DH
+
+lea esi, outFar
+lea edi, outString +47+1
+cld
+mov ecx, 14
+mov outString+62, 0DH
+
+
+
+
 
  
 

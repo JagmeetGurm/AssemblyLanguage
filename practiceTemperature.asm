@@ -133,7 +133,7 @@ rep movsb
 mov outString + 38, 20H
 
 
-
+;printing values in farenheit
 ;print another value
 lea esi, outCelStr3
 lea edi, outString + 39
@@ -150,6 +150,12 @@ mov ecx, 16
 rep movsb
 mov outString+67, 20H
 
+lea esi, farStr
+lea edi, outString + 68
+cld
+mov ecx, 11
+rep movsb
+mov outString+ 79, 20H
 
 
 
